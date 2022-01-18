@@ -36,34 +36,77 @@ var getPlatforms = function (projectName) {
     isAdded : fs.existsSync('platforms/ios'),
     iconsPath : 'platforms/ios/' + projectName + xcodeFolder,
     icons : [
-      { name: 'icon-20.png',             size : 20   },
+      // iphone notification
       { name: 'icon-20@2x.png',          size : 40   },
       { name: 'icon-20@3x.png',          size : 60   },
-      { name: 'icon-40.png',             size : 40   },
+      
+      // iphone settings
+      { name: 'icon-29.png',             size : 29   },
+      { name: 'icon-29@2x.png',          size : 58   },
+      { name: 'icon-29@3x.png',          size : 87   },
+
+      // iphone spotlight
       { name: 'icon-40@2x.png',          size : 80   },
-      { name: 'icon-50.png',             size : 50   },
-      { name: 'icon-50@2x.png',          size : 100  },
+      { name: 'icon-40@3x.png',          size:  120  },
+
+      // iphone app ios 5,6
+      { name: 'icon-57.png',             size : 57   },
+      { name: 'icon-57@2x.png',          size : 114  },
+
+      // iphone app ios 7-14
       { name: 'icon-60@2x.png',          size : 120  },
       { name: 'icon-60@3x.png',          size : 180  },
+
+      // ipad notification
+      { name: 'icon-20.png',             size : 20   },
+      { name: 'icon-20@2x.png',          size : 40   },
+
+      // ipad settings
+      { name: 'icon-29.png',             size : 29   },
+      { name: 'icon-29@2x.png',          size : 58   },
+
+      // ipad spotlight ios 7-14
+      { name: 'icon-40.png',             size : 40   },
+      { name: 'icon-40@2x.png',          size : 80   },
+
+      // ipad spotlight ios 5,6
+      { name: 'icon-50.png',             size : 50   },
+      { name: 'icon-50@2x.png',          size : 100  },
+
+      // ipad app ios 5,6
       { name: 'icon-72.png',             size : 72   },
       { name: 'icon-72@2x.png',          size : 144  },
+
+      // ipad app ios 7-14
       { name: 'icon-76.png',             size : 76   },
       { name: 'icon-76@2x.png',          size : 152  },
+
+      // ipad pro app ios 9-14
       { name: 'icon-83.5@2x.png',        size : 167  },
+
+      // ios AppStore
       { name: 'icon-1024.png',           size : 1024 },
-      { name: 'icon-small.png',          size : 29   },
-      { name: 'icon-small@2x.png',       size : 58   },
-      { name: 'icon-small@3x.png',       size : 87   },
-      { name: 'icon.png',                size : 57   },
-      { name: 'icon@2x.png',             size : 114  },
-      { name: 'AppIcon24x24@2x.png',     size : 48   },
-      { name: 'AppIcon27.5x27.5@2x.png', size : 55   },
-      { name: 'AppIcon29x29@2x.png',     size : 58   },
-      { name: 'AppIcon29x29@3x.png',     size : 87   },
-      { name: 'AppIcon40x40@2x.png',     size : 80   },
-      { name: 'AppIcon44x44@2x.png',     size : 88   },
-      { name: 'AppIcon86x86@2x.png',     size : 172  },
-      { name: 'AppIcon98x98@2x.png',     size : 196  }
+
+      // Apple Watch notification
+      { name: 'icon-24@2x.png',          size : 48   },
+      { name: 'icon-27.5@2x.png',        size : 55   },
+
+      // Apple Watch settings
+      { name: 'icon-29@2x.png',          size : 58   },
+      { name: 'icon-29@3x.png',          size : 87   },
+
+      // Apple Watch home screen
+      { name: 'icon-40@2x.png',          size : 80   },
+      { name: 'icon-44@2x.png',          size : 88   },
+      { name: 'icon-50@2x.png',          size : 100   },
+
+      // Apple Watch short look
+      { name: 'icon-86@2x.png',          size : 172  },
+      { name: 'icon-98@2x.png',          size : 196  },
+      { name: 'icon-108@2x.png',         size : 216  },
+
+      // Apple Watch App Store
+      { name: 'icon-1024.png',           size : 1024 },
     ]
   });
   platforms.push({
